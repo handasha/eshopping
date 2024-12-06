@@ -1,19 +1,7 @@
 <h2>Login</h2>
-
-<!-- Standard login form -->
 <form method="post" asp-controller="Account" asp-action="Login">
-    <div>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="Username" placeholder="Username" required />
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="Password" placeholder="Password" required />
-    </div>
+    <input type="text" name="Username" placeholder="Username" />
+    <input type="password" name="Password" placeholder="Password" />
     <button type="submit">Login</button>
 </form>
 
-<hr />
-
-<!-- Facebook login button -->
-<a href="/Account/FacebookLogin" class="btn btn-primary">Login with Facebook</a>
